@@ -7,9 +7,9 @@ cilium status --context $CLUSTER1
 cilium status --context $CLUSTER2
 
 #ENable service mesh on both clusters 
-cilium clustermesh enable --context $CLUSTER1 --service-type LoadBalancer #NodePort
-    cilium clustermesh disable --context $CLUSTER1
-cilium clustermesh enable --context $CLUSTER2 --service-type LoadBalancer #NodePort
+cilium clustermesh enable --context $CLUSTER1 --service-type NodePort #LoadBalancer 
+cilium clustermesh disable --context $CLUSTER1
+cilium clustermesh enable --context $CLUSTER2 --service-type NodePort #LoadBalancer
      cilium clustermesh disable --context $CLUSTER2
 
 #Check teh status
