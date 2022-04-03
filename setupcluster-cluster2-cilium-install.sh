@@ -28,7 +28,7 @@ sha256sum --check cilium-linux-amd64.tar.gz.sha256sum
 sudo tar xzvfC cilium-linux-amd64.tar.gz /usr/local/bin
 rm cilium-linux-amd64.tar.gz{,.sha256sum}
 
-cilium install   --cluster-id=2 --cluster-name="cluster2"  --kube-proxy-replacement="strict"  --inherit-ca $CLUSTER1
+cilium install   --cluster-id=2 --cluster-name="cluster2"  --inherit-ca $CLUSTER1
     #cilium uninstall
 
 #****************************************************************Verify Cluster Installation and install "Hubble"******************************************
